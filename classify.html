@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    h1 {
+      color: black;
+      text-align: left;
+      font-size: 20px;
+    }
+
+    h2 {
+      color: black;
+      text-align: left;
+      font-size: 40px;
+
+    }
+
+    list-group {
+      width: 300px;
+    }
+  </style>
+
+</head>
+<body>
+
+<div class="container-fluid">
+  <h1>DeepCell | Classification Page</h1>
+  <div class="row">
+    <div class="col-sm-2">
+    	<div class="list-group">
+    		<a href="dashboard.html" class="list-group-item active"><span class="glyphicon glyphicon-dashboard"></span>  Dashboard </a>
+    		<a href="createNewProject.html" class="list-group-item"><span class="glyphicon glyphicon-folder-open"></span>  Create New Project </a>
+    		<a href="upload.html" class="list-group-item"><span class="glyphicon glyphicon-upload"></span>  Upload Datasets </a>
+    		<a href="classify.html" class="list-group-item"><span class="glyphicon glyphicon-eye-open"></span>  Classify Datasets </a>
+    		<a href="download.html" class="list-group-item"><span class="glyphicon glyphicon-download-alt"></span>  Download </a>
+ 		</div>
+    </div>
+    <div class="col-sm-10">
+    	<h2>Classify Datasets </h2>
+      <hr />
+      <h5>Select existing project to start classifying</h5>
+      <select class="custom-select">
+        <option selected>Select existing project</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <h5>Filename: Donut.JPG</h5>
+      <img src="http://www.mapledonuts.com/uploads/donut%20platter.jpg" class="img-rounded" alt="Donut" width="300" height="200">
+      <h5>Tags:</h5>
+      <button type="submit" class="btn btn-default">Upload Dataset</button>
+      <button type="submit" class="btn btn-default">Reset</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
